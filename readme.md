@@ -1,71 +1,37 @@
-# node-module-boilerplate
+# se-orgnr-validator [![Build Status](https://travis-ci.com/eckberg/se-orgnr-validator.svg?branch=master)](https://travis-ci.com/eckberg/se-orgnr-validator)
 
-> Boilerplate to kickstart creating a Node.js module
-
-This is what I use for [my own modules](https://www.npmjs.com/~sindresorhus).
-
-Also check out [`node-cli-boilerplate`](https://github.com/sindresorhus/node-cli-boilerplate).
-
-
-## Getting started
-
-**Click the "Use this template" button.**
-
-Alternatively, create a new directory and then run:
-
-```
-$ curl -fsSL https://github.com/sindresorhus/node-module-boilerplate/archive/master.tar.gz | tar -xz --strip-components=1
-```
-
-There's also a [Yeoman generator](https://github.com/sindresorhus/generator-nm).
-
-
----
-
-**Remove everything from here and above**
-
----
-
-
-# unicorn-fun [![Build Status](https://travis-ci.com/YOUR-GITHUB-USERNAME/unicorn-fun.svg?branch=master)](https://travis-ci.com/YOUR-GITHUB-USERNAME/unicorn-fun)
-
-> My awesome module
+> Node validator for Swedish company registration numbers (organisationsnummer)
 
 
 ## Install
 
 ```
-$ npm install unicorn-fun
+$ npm install se-orgnr-validator
 ```
 
 
 ## Usage
 
 ```js
-const unicornFun = require('unicorn-fun');
+const orgnrValidator = require('se-orgnr-validator');
 
-unicornFun('unicorns');
-//=> 'unicorns & rainbows'
+orgnrValidator('556016-0680');
+//=> true
 ```
 
 
 ## API
 
-### unicornFun(input, options?)
+### orgnrValidator(input)
 
 #### input
 
-Type: `string`
+Type: `string` or `integer`
 
-Lorem ipsum.
+The number to validate. Can be either a string or an integer, meaning that you may omit the dash between the first 6 and the last 4 numerals.
 
-#### options
+## Test
 
-Type: `object`
-
-##### postfix
-
-Type: `string`<br>
-Default: `rainbows`
-
-Lorem ipsum.
+```
+npm test
+```

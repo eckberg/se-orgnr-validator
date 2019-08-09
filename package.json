@@ -1,30 +1,32 @@
 {
-	"name": "unicorn-fun",
-	"version": "0.0.0",
-	"description": "My awesome module",
+	"name": "se-orgnr-validator",
+	"version": "0.0.1",
+	"description": "Node validator for Swedish company registration numbers (organisationsnummer)",
 	"license": "MIT",
-	"repository": "YOUR-GITHUB-USERNAME/unicorn-fun",
+	"repository": "eckberg/se-orgnr-validator",
 	"author": {
-		"name": "YOUR NAME",
-		"email": "YOUR EMAIL",
-		"url": "YOUR WEBSITE"
+		"name": "Karl Eckberg",
+		"email": "karl@eckberg.se",
+		"url": "https://github.com/eckberg"
 	},
 	"engines": {
 		"node": ">=8"
 	},
 	"scripts": {
-		"test": "xo && ava"
+		"test": "standard --verbose | snazzy && jest"
 	},
 	"files": [
 		"index.js"
 	],
 	"keywords": [
-		"unicorn",
-		"fun"
+		"organisationsnummer",
+		"Bolgasverket",
+		"aktiebolag"
 	],
 	"dependencies": {},
 	"devDependencies": {
-		"ava": "^2.1.0",
-		"xo": "^0.24.0"
+		"jest": "^24.8.0",
+		"snazzy": "^8.0.0",
+		"standard": "^13.1.0"
 	}
 }
