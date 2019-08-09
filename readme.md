@@ -1,6 +1,6 @@
 # se-orgnr-validator [![Build Status](https://travis-ci.com/eckberg/se-orgnr-validator.svg?branch=master)](https://travis-ci.com/eckberg/se-orgnr-validator)
 
-> Node validator for Swedish company registration numbers (organisationsnummer)
+Node validator for Swedish company registration numbers (organisationsnummer)
 
 
 ## Install
@@ -13,9 +13,9 @@ $ npm install se-orgnr-validator
 ## Usage
 
 ```js
-const orgnrValidator = require('se-orgnr-validator');
+const orgnrValidator = require('se-orgnr-validator')
 
-orgnrValidator('556016-0680');
+orgnrValidator('556016-0680')
 //=> true
 ```
 
