@@ -1,6 +1,6 @@
 {
 	"name": "se-orgnr-validator",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"description": "Node validator for Swedish company registration numbers (organisationsnummer)",
 	"license": "MIT",
 	"repository": "eckberg/se-orgnr-validator",
