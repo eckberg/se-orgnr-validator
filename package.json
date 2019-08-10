@@ -1,9 +1,12 @@
 {
 	"name": "se-orgnr-validator",
 	"version": "1.0.0",
-	"description": "Node validator for Swedish company registration numbers (organisationsnummer)",
+	"description": "Validator for Swedish company registration numbers (organisationsnummer) in Node.js",
 	"license": "MIT",
-	"repository": "eckberg/se-orgnr-validator",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/eckberg/se-orgnr-validator.git"
+	},
 	"author": {
 		"name": "Karl Eckberg",
 		"email": "karl@eckberg.se",
@@ -20,7 +23,7 @@
 	],
 	"keywords": [
 		"organisationsnummer",
-		"Bolgasverket",
+		"Bolagsverket",
 		"aktiebolag"
 	],
 	"dependencies": {},

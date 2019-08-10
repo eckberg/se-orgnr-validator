@@ -1,2 +1,8 @@
+*.log
+.cache
+.DS_Store
+src/.temp
 node_modules
-yarn.lock
+dist
+.env
+.env.*

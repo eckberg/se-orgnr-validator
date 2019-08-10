@@ -1,5 +1,15 @@
 'use strict'
 
+/**
+ * Validates if the input is a possible Swedish company registration number
+ * (organisationsnummer). Will not indicate if the number is actually
+ * active or registered.
+ *
+ * @param  {string} input   The number to check, could be either a string
+ *                          including the dash, or a number with no dash.
+ * @return {boolean}        Returns true or false depending on whether the input
+ *                          is a valid organisationsnummer or not.
+ */
 module.exports = (input) => {
   // Only accept a string or number.
   if (
