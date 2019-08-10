@@ -1,6 +1,6 @@
 {
 	"name": "se-orgnr-validator",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Validator for Swedish company registration numbers (organisationsnummer) in Node.js",
 	"license": "MIT",
 	"repository": {
