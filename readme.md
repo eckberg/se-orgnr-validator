@@ -1,7 +1,7 @@
 # se-orgnr-validator
 
 [![Build Status](https://travis-ci.com/eckberg/se-orgnr-validator.svg?branch=master)](https://travis-ci.com/eckberg/se-orgnr-validator)
-![npm](https://img.shields.io/npm/v/se-orgnr-validator)
+[![npm](https://www.npmjs.com/package/se-orgnr-validator)](https://img.shields.io/npm/v/se-orgnr-validator)
 [![Coverage Status](https://coveralls.io/repos/github/eckberg/se-orgnr-validator/badge.svg?branch=master)](https://coveralls.io/github/eckberg/se-orgnr-validator?branch=master)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -22,6 +22,12 @@ const orgnrValidator = require('se-orgnr-validator')
 
 orgnrValidator('556016-0680')
 //=> true
+
+orgnrValidator(5560160680)
+//=> true
+
+orgnrValidator(55610160680)
+//=> false
 ```
 
 
