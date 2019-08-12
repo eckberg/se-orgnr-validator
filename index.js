@@ -6,17 +6,18 @@
  * active or registered.
  *
  * @param  {string} input   The number to check, could be either a string
- *                          including the dash, or a number with no dash.
+ *                          with or without the dash, or a number without dash.
  * @return {boolean}        Returns true or false depending on whether the input
  *                          is a valid organisationsnummer or not.
  */
 module.exports = (input) => {
   // Only accept a string or number.
   if (
-    typeof input !== 'string' &&
-    typeof input !== 'number'
+    typeof input !== 'string' && // Input must be either string...
+    typeof input !== 'number' // ...or number
   ) {
-    throw new TypeError(`Expected a string, got ${typeof input}`)
+    // Throw TypeError if not string or number
+    throw new TypeError(`Expected a string or number, got ${typeof input}`)
   }
 
   let normalized
@@ -27,11 +28,12 @@ module.exports = (input) => {
       .replace(/\D/g, '') // Remove any non-digits (typically the dash)
   }
 
-  // Normalize the input, if it is a number
+  // If input is a number, turn into a string
   if (typeof input === 'number') {
-    normalized = '' + input // Turn the number into a string
+    normalized = '' + input
   }
 
+  // Return true or false if valid or not
   return (
     normalized.length === 10 && // Length must be 10 (without dash)
     parseInt(normalized.slice(2, 3)) >= 2 && // Third numeral must be at least 2
@@ -41,7 +43,7 @@ module.exports = (input) => {
 
 /*
 * Internal function to validate luhn.
-* Based on https://github.com/bendrucker/fast-luhn
+* Insipred by https://github.com/bendrucker/fast-luhn
 */
 function validateChecksum (number) {
   var length = number.length
