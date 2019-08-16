@@ -16,7 +16,8 @@
 		"node": ">=8"
 	},
 	"scripts": {
-		"test": "standard --verbose | snazzy && jest"
+		"test": "standard --verbose | snazzy && jest",
+    "coverage": "jest --coverage"
 	},
 	"files": [
 		"index.js"
